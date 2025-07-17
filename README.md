@@ -1,10 +1,10 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 <img width="715" height="620" alt="image" src="https://github.com/user-attachments/assets/b50b6590-168e-4edc-bc28-53220452021f" />
 <img width="1418" height="639" alt="image" src="https://github.com/user-attachments/assets/be1eacb3-68cd-4834-b9bf-23fea753115e" />
 <img width="1211" height="558" alt="image" src="https://github.com/user-attachments/assets/3631c9eb-9c82-40d5-8572-1e537918d3c3" />
 <img width="1405" height="633" alt="image" src="https://github.com/user-attachments/assets/560d2c2b-e28c-4fe9-b53d-c1a86e27e1a9" />
 <img width="1407" height="643" alt="image" src="https://github.com/user-attachments/assets/943094f6-7999-44cf-b4a3-9692b644cd14" />
-
+</div>
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
