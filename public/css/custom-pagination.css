@@ -1,0 +1,54 @@
+/* Styles pour le conteneur de navigation */
+.pagination-nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styles pour la liste de pagination */
+.pagination-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+/* Styles pour chaque élément de la liste */
+.pagination-item {
+    margin: 0 5px;
+}
+
+/* Styles de base pour les liens */
+.pagination-link {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Styles pour les liens précédent et suivant */
+.pagination-link.previous,
+.pagination-link.next {
+    font-weight: bold;
+}
+
+/* Styles pour la page active */
+.pagination-item.active .pagination-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+/* Styles pour les éléments désactivés */
+.pagination-item.disabled .pagination-link {
+    color: #999;
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+}
+
+/* Hover effect */
+.pagination-link:hover:not(.disabled) {
+    background-color: #e9ecef;
+}

@@ -1,0 +1,304 @@
+/* Styles améliorés pour la page profil */
+
+/* Animation de fade-in pour la page */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Variables CSS pour les couleurs et transitions */
+:root {
+    --primary-color: #088178;
+    --secondary-color: #116D6E;
+    --accent-color: #4942E4;
+    --background-color: #f8f9fa;
+    --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --transition-speed: 0.3s;
+}
+
+/* Container principal */
+.profile-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* En-tête de profil */
+.profile-header {
+    background: linear-gradient(145deg, #ffffff, #f3f3f3);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style de l'image de profil */
+.profile-image {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform var(--transition-speed);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter var(--transition-speed);
+}
+
+.profile-image:hover img {
+    filter: brightness(1.1);
+}
+
+/* Informations de profil */
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h3 {
+    font-size: 2.2rem;
+    margin: 0 0 15px 0;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.profile-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-info p i {
+    color: var(--primary-color);
+}
+
+/* Badge de statut */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 20px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    gap: 8px;
+    transition: transform var(--transition-speed);
+}
+
+.status-badge:hover {
+    transform: translateY(-2px);
+}
+
+.status-badge i {
+    font-size: 0.8rem;
+}
+
+/* Formulaire de profil */
+.profile-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+}
+
+/* Groupes de formulaire */
+.form-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+    font-size: 0.95rem;
+    transition: color var(--transition-speed);
+}
+
+.form-group:focus-within label {
+    color: var(--primary-color);
+}
+
+/* Styles des inputs */
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all var(--transition-speed);
+    background-color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(8, 129, 120, 0.1);
+    outline: none;
+}
+
+/* Style spécial pour l'input file */
+.form-group input[type="file"] {
+    border: 2px dashed #e1e1e1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.form-group input[type="file"]:hover {
+    border-color: var(--primary-color);
+    background-color: rgba(8, 129, 120, 0.05);
+}
+
+/* Messages d'erreur */
+.error {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.error i {
+    font-size: 0.8rem;
+}
+
+/* Alertes */
+.alert {
+    padding: 16px 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.alert-success {
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.alert i {
+    font-size: 1.2rem;
+}
+
+/* Actions du formulaire */
+.form-actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+/* Bouton de soumission */
+.form-actions button {
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-actions button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(8, 129, 120, 0.2);
+}
+
+.form-actions button i {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .profile-form {
+        padding: 30px 20px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Styles pour les états de focus et hover */
+.profile-form:focus-within {
+    box-shadow: var(--card-shadow), 0 0 0 3px rgba(8, 129, 120, 0.1);
+}
+
+/* Animation de chargement pour le bouton submit */
+@keyframes loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.form-actions button.loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.8;
+}
+
+.form-actions button.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: loading 0.8s linear infinite;
+    margin-left: 10px;
+}

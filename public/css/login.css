@@ -1,0 +1,133 @@
+/* login.css */
+
+body {
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #485563, #29323c); /* Gradient background */
+    color: #fff;
+    overflow: hidden; /* Prevents scrollbars on image overflow */
+}
+
+
+.login-container {
+    display: flex;                 /* Makes container a flexbox */
+    max-width: 900px;              /* Adjust max-width as needed */
+    width: 90%;                   /* Occupies 90% of the container */
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.login-img {
+    width: 50%;  /* Image occupies half of the container */
+    background-size: cover; /* Scales image to cover the container */
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.login-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the container completely */
+}
+
+
+
+.login-form {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    background: #485563;
+    border-radius: 0 15px 15px 0; /* Rounded right corners */
+
+}
+
+
+
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Bold labels */
+}
+
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners */
+    box-sizing: border-box;
+    background-color: #e9ecef; /* Light input background */
+    color: #495057;
+    font-size: 16px;
+}
+
+
+
+
+button[type="submit"] {
+    background-color: #28a745; /* Green */
+    color: white;
+    padding: 14px 24px; /* Increased padding */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    width: 100%; /* Button spans full width */
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Slightly darker green on hover */
+}
+
+
+/* Forgot password link */
+.forgot-password {
+    margin-top: 20px;
+    text-align: center; /* Center the link */
+}
+
+.forgot-password a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Add a hover effect to the link*/
+}
+
+.forgot-password a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.error-messages {
+    background-color: #fdd; /* Light red background */
+    color: #900; /* Dark red text */
+    border: 1px solid #faa; /* Lighter red border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+
+}
+
+.error-messages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
